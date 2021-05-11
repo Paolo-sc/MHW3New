@@ -1,0 +1,236 @@
+body{
+    background-color: #EAEDED;
+}
+
+header{
+    background-image: url("images/header_bg.jpeg");
+    background-position:bottom;
+    height:350px;
+    box-shadow: 5px 5px 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 strong{
+    font-size: 0.65em;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+#sbar{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sbar strong{
+    font-size: 1.9em;
+}
+
+#sbar input{
+    height: 30px;
+}
+
+#products,#prefs_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    width: 65%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#prefs{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    display: none;
+}
+
+#prefs strong{
+    margin-left: 10%;
+    font-size: 1.9em;
+}
+
+#products div,#prefs_box div{
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    width:390px;
+    height:fit-content;
+}
+
+#prefs_box div{
+    width:289px;
+}
+
+#products div h1,#prefs_box div h1{
+    float:left;
+    font-size: 1.3em;
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 50px;
+    width: 84%;
+    overflow:hidden;
+}
+
+#prefs_box div h1{
+    width: 80%;
+    height: 50px;
+    font-size: 1.13em;
+
+}
+
+.contents{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 300px;
+    max-height: 300px;
+}
+
+#prefs_box .contents{
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+.star,.fullstar{
+    cursor: pointer;
+    width: 35px;
+    float: right;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+#products div h2{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.1em;
+    font-weight: lighter;
+    display: none;
+}
+
+#products div p{
+    width: 69%;
+    cursor: pointer;
+    margin-left: 10px;
+    color: rgb(0, 113, 133);
+    text-decoration: underline;
+    float: left;
+}
+
+.ebay{
+    float: right;
+    width: 100px;
+    cursor: pointer;
+}
+
+#products div p:hover{
+    color: rgb(218, 161, 57);
+}
+
+footer{
+    margin-top: 150px;
+}
+
+.hide{
+    display: none !important; 
+}
+
+.visible{
+    display: flex !important;
+}
+
+#modale section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAEDED;
+    height: 80%;
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+#modale div{
+    background-color: white;
+    display: flex;
+    height: 144px;
+    margin: auto;
+    width: 70%;
+}
+
+#modale{
+	position: fixed;
+    top: 0;
+    left: 0;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+#modale section div h1{
+    align-self: center;
+    margin: auto;
+    font-size: 3em;
+}
+
+#modale section div img{
+    width: 150px;
+    margin-left: 30px;
+}
+
+#modale section div a{
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 65%;
+    height: fit-content;
+    font-size: 1.2em;
+}
+
+#modale section div p{
+    display: block;
+    width: fit-content;
+    margin-left: 30px;
+    margin-top: 40px;
+    float: right;
+    height: fit-content;
+    font-style: oblique;
+    color: rgb(85, 85, 85);
+}
+
+#prefs_box .ebay{
+    float: left;
+    margin-left: 32%;
+}
+
+@media(max-width: 500px){
+    #sbar{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contents{
+        width: 50%;
+    }
+
+    #products div,#prefs_box div{
+        margin-left: 0;
+    }
+
+    #products div h1,#prefs_box div h1{
+        width: 73%;
+    }
+}
